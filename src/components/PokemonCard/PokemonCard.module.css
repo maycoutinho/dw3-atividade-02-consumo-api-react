@@ -1,0 +1,39 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem 1rem;
+  background-color: var(--fourth-color-alpha);
+  border: solid 1px var(--primary-alpha);
+  border-radius: 0.8rem;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 20px var(--primary-alpha);
+}
+
+.card .number {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  font-size: 0.8rem;
+  color: var(--label-color);
+}
+
+.card img {
+  width: 100%;
+  max-width: 140px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.card h3 {
+  margin-top: 0.5rem;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  font-size: 1rem;
+}

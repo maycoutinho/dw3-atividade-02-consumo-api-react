@@ -1,0 +1,89 @@
+/* Início Navbar */
+.navbar {
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--fourth-color);
+}
+
+.navbar .logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.navbar .logo span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.navbar .logo a:hover {
+  scale: 0.95;
+  transition: 0.3s;
+}
+
+.navbar .menu .menuItems {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .menu .menuItems li {
+  padding: 1.2rem;
+}
+
+.navbar .menu .menuItems a {
+  color: var(--label-color);
+}
+
+.navbar .menu .menuItems a:hover {
+  color: var(--primary-color);
+}
+
+.menuBtn {
+  color: var(--label-color);
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  display: none;
+}
+/* Fim Navbar */
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .navbar .menu .menuItems {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--fourth-color);
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .menu .menuItems li {
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 2px outset var(--label-color);
+  }
+
+  .navbar .menu .menuItems.active {
+    left: 0;
+  }
+
+  .menuBtn {
+    display: block;
+    z-index: 999;
+  }
+}
+/* FIM RESPONSIVIDADE */

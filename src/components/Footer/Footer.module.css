@@ -1,0 +1,20 @@
+/* Início Footer */
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  font-size: 0.8rem;
+  background-color: var(--third-color);
+  color: var(--label-color);
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+/* Fim Footer */
